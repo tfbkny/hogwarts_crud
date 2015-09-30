@@ -1,6 +1,9 @@
 <div id="the-houses">
   <br/>
   <h1 class="threedeefy">The houses</h1>
+  <p>
+    <%= link_to 'Back to Main', root_path%>
+  </p>
 <% @houses.each do |house| %>
   <div class="house">
     <h2 class="outlined"><%= link_to house.name, house_path(house) %></h2>

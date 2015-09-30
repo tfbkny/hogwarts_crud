@@ -19,11 +19,11 @@
 
  @font-face{
 	font-family: 'harrp';
-	src: url('harrp-webfont.eot');
-	src: url('harrp-webfont.eot?#iefix') format('embedded-opentype'),
-	     url('harrp-webfont.woff') format('woff'),
-	     url('harrp-webfont.ttf') format('truetype'),
-	     url('harrp-webfont.svg#webfont') format('svg');
+	src: asset-url('harrp-webfont.eot');
+	src: asset-url('harrp-webfont.eot?#iefix') format('embedded-opentype'),
+	     asset-url('harrp-webfont.woff') format('woff'),
+	     asset-url('harrp-webfont.ttf') format('truetype'),
+	     asset-url('harrp-webfont.svg#webfont') format('svg');
 }
 
  body {
@@ -34,20 +34,20 @@
    text-align: center;
    font-color: #7C2A30;
    background-color: #000;
-   background-image:url('hogwarts-school.jpg');
+   background-image:url('http://previewstaging.com/study/hosted-assets/hogwarts/images/hogwarts-school.jpg');
    background-size: cover;
    background-repeat: no-repeat;
  }
 
  .students-list {
-   background-image: url('great-hall.jpg');
+   background-image: url('http://previewstaging.com/study/hosted-assets/hogwarts/images/great-hall.jpg');
    background-size: cover;
    background-repeat: repeat;
  }
 
  #the-houses{
    margin-top:-25px;
-   background-image: url('hogwarts-summer-lg.jpg');
+   background-image: url('http://previewstaging.com/study/hosted-assets/hogwarts/images/hogwarts-summer-lg.jpg');
    background-size: contain;
    background-repeat: repeat;
  }
@@ -61,10 +61,12 @@
  }
 
  h1 {
+   font-family: 'harrp';
    font-size: 36px;
  }
 
  h2 {
+   font-family: 'harrp';
    font-size: 22px;
  }
 
@@ -93,7 +95,7 @@
  }
 
  input {
-   font-family: "harrp",fantasy, serif;
+   font-family: "harrp",Ablefont, Irish Grover, fantasy, serif;
    font-size: 1em;
  }
 
@@ -123,7 +125,7 @@
    box-sizing: content-box;
    cursor: pointer;
    border: none;
-   font: normal 3em/normal "harrp";
+   font: normal 3em/normal "harrp", Ablefont;
    color: rgba(255,255,255,1);
    text-align: center;
    -o-text-overflow: clip;

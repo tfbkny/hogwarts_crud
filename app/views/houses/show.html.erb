@@ -1,4 +1,8 @@
 <h1 class="threedeefy"><%= @house.name %></h1>
+<p>
+  <%= link_to 'Back to Houses', houses_path, class: "outlined" %>
+</p>
+
 <% @house.students.each do |student| %>
 
 <div class="student">
@@ -8,5 +12,5 @@
 
 <% end %>
 <p>
-  <%= link_to 'Back to Main', root_path %>
+  <%= link_to 'Back to Houses', houses_path, class: "outlined" %>
 </p>
