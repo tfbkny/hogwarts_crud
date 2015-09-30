@@ -1,9 +1,12 @@
-<h1><%= @house.name %></h1>
+<h1 class="threedeefy"><%= @house.name %></h1>
 <% @house.students.each do |student| %>
 
 <div class="student">
-  <h2><%= student.name %></h2>
+  <h2 class="outlined"><%= student.name %></h2>
   <%= image_tag student.img_url %>
 </div>
 
 <% end %>
+<p>
+  <%= link_to 'Back to Main', root_path %>
+</p>

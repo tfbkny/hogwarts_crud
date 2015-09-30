@@ -1,8 +1,12 @@
-<h1>Here are the students</h1>
-  <%= link_to "Create New Student", new_student_path %>
+<div class="students-list">
+  <h1 class="threedeefy">Here are the students</h1>
+  <%= link_to "Create New Student", root_path, class: "outlined" %>
+  <br />
+  <%= link_to 'Back to Main', root_path %>
+  <br />
 <% @students.each do |student| %>
   <div>
-    <%= link_to student.name, student_path(student) %> - <%= link_to student.house.name, house_path(student.house) %>
+    <%= link_to student.name, student_path(student), class: "outlined" %> - <%= link_to student.house.name, house_path(student.house), class: "outlined" %>
 <% end %>
   </div>
-
+</div>

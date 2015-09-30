@@ -1,7 +1,13 @@
-<h1>The houses</h1>
+<div id="the-houses">
+  <br/>
+  <h1 class="threedeefy">The houses</h1>
 <% @houses.each do |house| %>
   <div class="house">
-    <h2><%= link_to house.name, house_path(house) %></h2>
+    <h2 class="outlined"><%= link_to house.name, house_path(house) %></h2>
     <img src="<%= house.img_url %>"/>
   <div>
 <% end %>
+</div>
+<p>
+  <%= link_to 'Back to Main', root_path%>
+</p>

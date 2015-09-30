@@ -1,19 +1,18 @@
-<h1>Welcome to Hogwarts!</h1>
-<%= link_to 'View the Houses', '/houses' %>
-<%= link_to 'View the Students', '/students' %>
+<h1 class="threedeefy">Welcome to Hogwarts!</h1>
+<%= link_to 'View the Houses', '/houses', class: "outlined" %><br />
+<%= link_to 'View the Students', '/students', class: "outlined" %>
 
 
-<h1>Enroll a Student</h1>
+<h1  class="threedeefy">Enroll a Student</h1>
 <%= form_for(@student) do |f| %>
 
-  <%= f.label :name, "Name"%>
-  <%= f.text_field :name %><br />
+  <%= f.label :name, "Name", class: "outlined"%>
+  <%= f.text_field :name %><br /><br/>
 
-  <%= f.label :img_url, "Image URL"%>
-  <%= f.text_field :img_url %><br/>
+  <%= f.label :img_url, "Image URL", class: "outlined"%>
+  <%= f.text_field :img_url %><br/><br/>
 
   <%= f.collection_select :house_id, @houses, :id, :name%><br>
 
   <%= submit_tag   'Enroll' %>
 <% end %>
-
