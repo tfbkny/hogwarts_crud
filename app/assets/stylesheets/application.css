@@ -123,7 +123,7 @@
    box-sizing: content-box;
    cursor: pointer;
    border: none;
-   font: normal 72px/normal "harrp", class="support css-value">Fantasy, serif;
+   font: normal 3em/normal "harrp";
    color: rgba(255,255,255,1);
    text-align: center;
    -o-text-overflow: clip;
